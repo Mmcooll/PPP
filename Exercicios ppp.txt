@@ -1,0 +1,151 @@
+1.1.1
+int main()                                                             
+{                                                                      
+    int a=18, b=56;                                                    
+    printf("O meu nome é Martim, tenho %d anos e peso %d kilos",a,b)  ;
+}                                                                      
+
+1.1.2
+int main()                                                              
+{                                                                       
+    int a, b;                                                           
+    printf("Escreva a sua idade e, de seguida, o seu peso:\n") ;        
+    scanf("%d %d",&a, &b) ;                                             
+    printf("O meu nome é Martim, tenho %d anos e peso %d kilos",a,b)  ; 
+}                                                                       
+1.1.4
+int main()                                                               
+{                                                                        
+    int a, b, c;                                                         
+    float soma, media;                                                   
+    printf("Digite 3 números de modo a calcular a respetiva média\n");   
+    scanf("%d %d %d", &a, &b, &c);                                       
+    soma=a+b+c;                                                          
+    media=(soma / 3);                                                    
+    printf("A média dos três números é %.1f", media);                    
+}                                                                        
+1.1.2
+int main() {                                    
+    double diferenca, preco;                    
+    printf("Insira o preço do produto:\n");     
+    scanf("%lf", &preco);                       
+    diferenca = 100 - preco;                    
+    while (diferenca > 0) {                     
+        if (diferenca >= 50) {                  
+            printf("1 Nota de 50\n");           
+            diferenca -= 50;                    
+        } else if (diferenca >= 20) {           
+            printf("1 Nota de 20\n");           
+            diferenca -= 20;                    
+        } else if (diferenca >= 10) {           
+            printf("1 Nota de 10\n");           
+            diferenca -= 10;                    
+        } else if (diferenca >= 5) {            
+            printf("1 Nota de 5\n");            
+            diferenca -= 5;                     
+        } else if (diferenca >= 1) {            
+            printf("1 Moeda de 1$\n");          
+            diferenca -= 1;                     
+        } else if (diferenca >= (0.50)) {       
+            printf("1 Moeda de 50 centimos\n"); 
+            diferenca -= 0.50;                  
+        } else if (diferenca >= (0.20)) {       
+            printf("1 Moeda de 20 centimos\n"); 
+            diferenca -= 0.20;                  
+        } else if (diferenca >= (0.10)) {       
+            printf("1 Moeda de 10 centimos\n"); 
+            diferenca -= 0.10;                  
+        } else if (diferenca >= (0.05)) {       
+            printf("1 Moeda de 5 centimos\n");  
+            diferenca -= 0.05;                  
+        } else if (diferenca >= (0.02)) {       
+            printf("1 Moeda de 2 centimos\n");  
+            diferenca -= 0.02;                  
+        } else {                                
+            printf("1 Moeda de 1 centimo\n");   
+            diferenca -= 0.01;                  
+        }                                       
+    }                                           
+}                                               
+1.2.2
+void main()
+{
+    float fahr, cel;
+    printf("Escreva a temperatura em Fahrenheit:");
+    scanf("%f",&fahr);
+    cel=((fahr-32)/1.8);
+    printf("A temperatura traduzida para Celsis é %.2f",cel);
+
+}
+2.1.1
+void main()                        
+{                                  
+    int num;                       
+    printf("Escreva um número");   
+    scanf("%d", &num);             
+    if ((num%2) == 0)              
+    {                              
+      printf("O numero é par");    
+    }                              
+    else                           
+    {                              
+        printf("O numero é impar");
+    }                              
+                                   
+}
+2.1.2
+void main()                              
+{                                        
+    double a,b,c, d=0;                   
+    printf("Escreva 3 números:\n");      
+    scanf("%lf %lf %lf", &a,&b,&c);      
+    if (a>d){d=a;}                       
+    if(b>d){d=b;}                        
+    if(c>d){d=c;}                        
+    printf("O maior número é o %.2f", d);
+} 
+2.1.3
+int main()                                
+{                                         
+ int a,b,soma,produto;                    
+ printf("Escreva 2 números inteiros:\n"); 
+ scanf("%d %d", &a,&b);                   
+  if ((a%2==0) && (b%2==0))               
+    {                                     
+      soma=a+b;                           
+      printf("%d",soma);                  
+    }                                     
+  else if ((a%2!=0)&&(b%2!=0))            
+    {                                     
+      produto=a*b;                        
+      printf("%d",produto);               
+    }                                     
+  else                                    
+    {                                     
+      if (a%2!=0) {printf("%d",a);}       
+      if (b%2!=0) {printf("%d",b);}       
+    }                                     
+}  
+2.2.1
+int main()                                               
+{                                                        
+    int a;                                               
+    printf("Indique a idade do visitante:\n") ;          
+    scanf("%d",&a) ;                                     
+    if ((a<=12) || (a>=61))                              
+    {                                                    
+        printf("Isento de pagamento") ;                  
+    }                                                    
+    else if ((a>=13) && (a<=24))                         
+    {                                                    
+        printf("Bilhete Radical");                       
+    }                                                    
+    else if(((a>=25) && (a<=36)) || ((a>=49) && (a<=60)))
+    {                                                    
+        printf("Bilhete light");                         
+    }                                                    
+    else if((a>=37) &&(a<=48))                           
+    {                                                    
+        printf("Bilhete normal");                        
+    }                                                    
+}                                                                                                                                                                                                                                                                             
