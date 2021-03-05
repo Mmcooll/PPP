@@ -203,4 +203,175 @@ int a,b;
         }                                                     
     printf("Parou no número %d", f) ;                         
 }                                                             
-                                                              
+ 3.1.3                                                           
+ int main()                                                      
+{                                                                
+    int a,b, menor=2147483647;                                   
+    printf("Escreva o número de números:");                      
+    scanf("%d",&a);                                              
+    for (int i=0;i<a;i++)                                        
+    {                                                            
+        printf("Número");                                        
+        scanf("%d", &b);                                         
+        if (b<menor)                                             
+        {                                                        
+            menor=b;                                             
+            b=0;                                                 
+        }                                                        
+                                                                 
+    }                                                            
+    printf("Valor minimo: %d",menor);                            
+}                                                                
+ 3.1.5                                                           
+ int main()                                                      
+{                                                                
+    for (int i=0; i<25; i++)                                     
+    {                                                            
+        for (int j=0; j<i;j++)                                   
+        {                                                        
+            printf("*");                                         
+        }                                                        
+        printf("\n");                                            
+    }                                                            
+} 
+ 3.3.2                                  
+ int main()                             
+{                                       
+int n = 285;                            
+    for (int i=1;i<n;i++)               
+{                                       
+ for (int j= 1; j<i;j++)                
+ {                                      
+     if (sao_amigos(i,j)==1)            
+     {                                  
+         printf ("|%d,%d|\n", i,j);     
+     }                                  
+ }                                      
+}                                       
+    sao_amigos(220,284);                
+}                                       
+int sao_amigos(int a, int b)            
+{                                       
+    int soma =0;                        
+                                        
+    for (int i=1; i<a;i++)              
+    {                                   
+        if(a%i==0){                     
+            soma+=i;                    
+        }                               
+    }                                   
+    if (soma == b)                      
+    {                                   
+        return 1;                       
+    }                                   
+    else {return 0;}                    
+}                                       
+ 4.1.1                                                                                      
+ int main()                                                                                 
+{                                                                                           
+    int a;                                                                                  
+    printf("Escreva um valor inteiro\n");                                                   
+   scanf("%d",&a);                                                                          
+   printf("%d", fatorial(a));                                                               
+                                                                                            
+}                                                                                           
+                                                                                            
+int fatorial(int n) {                                                                       
+    int fat =1;                                                                             
+    for (int i=1; i<=n;i++)                                                                 
+    {                                                                                       
+        fat*=i;                                                                             
+    }                                                                                       
+    return fat;                                                                             
+}                                                                                           
+ 4.2.2                                                                                      
+ int main()                                                                                 
+{                                                                                           
+    int a;                                                                                  
+    printf("Escreva um valor inteiro: \n");                                                 
+    scanf("%d", &a);                                                                        
+    perm(a);                                                                                
+                                                                                            
+}                                                                                           
+                                                                                            
+int perm(int n)                                                                             
+{                                                                                           
+    long int num = n;                                                                       
+    for (int i=2;i<n;i++)                                                                   
+  {                                                                                         
+    for (int f=1; f<i; f++)                                                                 
+    {                                                                                       
+     num*= (n-1*f) ;                                                                        
+    }                                                                                       
+   printf("p(%d,%d) = %d \n",n,i, num) ;                                                    
+   num =n;                                                                                  
+  }                                                                                         
+}                                                                                           
+4.2.6                                                                                       
+int inverte(int n)                                                                          
+{                                                                                           
+    int res =0;                                                                             
+    for(;n>0; n/=10)                                                                        
+    {                                                                                       
+        res =res *10+n %10;                                                                 
+                                                                                            
+    }                                                                                       
+    return res;                                                                             
+}                                                                                           
+ 4.2.4                                                                                      
+ int main()                                                                                 
+{                                                                                           
+    int a;                                                                                  
+    printf("Escreva um número:");                                                           
+    scanf("%d", &a);                                                                        
+    printf("%d", eprimo(a));                                                                
+}                                                                                           
+                                                                                            
+int eprimo(int n) {                                                                         
+    int primo =0;                                                                           
+    for (int i=1; i<=n; i++)                                                                
+    {                                                                                       
+        if (n%i==0)                                                                         
+        {                                                                                   
+            primo += i;                                                                     
+                                                                                            
+        }                                                                                   
+    }                                                                                       
+    if ((primo == n+1) && (primo != 2))                                                     
+    {                                                                                       
+        printf("1");                                                                        
+    }                                                                                       
+    else {printf("0");}                                                                     
+}                                                                                           
+4.2.5                                
+ int main()                             
+{                                       
+int n = 285;                            
+    for (int i=1;i<n;i++)               
+{                                       
+ for (int j= 1; j<i;j++)                
+ {                                      
+     if (sao_amigos(i,j)==1)            
+     {                                  
+         printf ("|%d,%d|\n", i,j);     
+     }                                  
+ }                                      
+}                                       
+    sao_amigos(220,284);                
+}                                       
+int sao_amigos(int a, int b)            
+{                                       
+    int soma =0;                        
+                                        
+    for (int i=1; i<a;i++)              
+    {                                   
+        if(a%i==0){                     
+            soma+=i;                    
+        }                               
+    }                                   
+    if (soma == b)                      
+    {                                   
+        return 1;                       
+    }                                   
+    else {return 0;}                    
+}                                                                                                                
